@@ -1,0 +1,86 @@
+/* Tüm sayfanın dış boşluklarını sıfırlıyoruz */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Açık gri arkaplan */
+}
+
+/* NAVBAR (FLEXBOX KULLANIMI) */
+.menu {
+    display: flex; /* İçindeki elemanları yan yana dizer */
+    justify-content: space-between; /* Logo sola, menü sağa yaslanır */
+    align-items: center; /* Dikeyde ortalar */
+    background-color: #1a1a1a;
+    padding: 15px 30px;
+}
+
+.menu .logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.linkler {
+    display: flex; /* Linkleri yan yana dizer */
+    list-style: none; /* Noktaları kaldırır */
+    gap: 20px; /* Linkler arası boşluk */
+}
+
+.linkler a {
+    color: white;
+    text-decoration: none; /* Alt çizgiyi kaldırır */
+}
+
+/* ÜRÜN LİSTELEME (GRID KULLANIMI - urunler.html için) */
+.urun-izgarasi {
+    display: grid; /* Izgara sistemi başlatır */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Mobilde alt alta, PC'de yan yana dizer */
+    gap: 20px; /* Ürünler arası boşluk */
+    padding: 20px;
+}
+
+.urun-karti {
+    background: white;
+    padding: 15px;
+    border-radius: 8px; /* Köşeleri yuvarlatır */
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+/* MOBİL UYUMLULUK (Responsive) */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column; /* Mobilde menüyü alt alta dizer */
+        text-align: center;
+    }
+    .linkler {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+}
+/* SEPET ADRES ALANI */
+.adres-alani {
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.adres-alani label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.adres-alani textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+    resize: vertical; /* Kutunun sadece dikeyde büyütülmesine izin verir */
+}

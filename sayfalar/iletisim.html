@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim | Forma Dükkanı</title>
+    <link rel="stylesheet" href="../stiller/stil.css">
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <div class="logo">Forma Dükkanı</div>
+            <ul class="linkler">
+                <li><a href="../index.html">Ana Sayfa</a></li>
+                <li><a href="urunler.html">Ürünler</a></li>
+                <li><a href="sepet.html">Sepetim</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main style="padding: 20px; max-width: 800px; margin: auto;">
+        <h2 class="sayfa-baslik">Bize Ulaşın</h2>
+        
+        <!-- İLETİŞİM FORMU -->
+        <div style="background: white; padding: 20px; border-radius: 8px; margin-bottom: 30px;">
+            <h3>İletişim Formu</h3>
+            <br>
+            <label>Adınız:</label><br>
+            <input type="text" style="width: 100%; padding: 8px; margin-bottom: 10px;">
+            
+            <label>Mesajınız:</label><br>
+            <textarea rows="4" style="width: 100%; padding: 8px; margin-bottom: 10px;"></textarea>
+            
+            <button id="iletisimGonder" class="buton">Gönder</button>
+        </div>
+
+        <!-- JAVASCRIPT QUİZ ALANI -->
+        <div style="background: white; padding: 20px; border-radius: 8px;">
+            <h3>Test: Hangi Formayı Almalısın?</h3>
+            <br>
+            <p>Soru: Hangi renkleri daha çok seviyorsun?</p>
+            <br>
+            <select id="renkSecimi" style="padding: 8px;">
+                <option value="sec">Seçiniz...</option>
+                <option value="sari-lacivert">Sarı - Lacivert</option>
+                <option value="sari-kirmizi">Sarı - Kırmızı</option>
+                <option value="siyah-beyaz">Siyah - Beyaz</option>
+            </select>
+            <br><br>
+            <button id="quizButon" class="buton">Sonucu Gör</button>
+            <p id="quizSonuc" style="font-weight: bold; margin-top: 15px;"></p>
+        </div>
+    </main>
+    <footer>
+        <p>Copyright © 2026 Forma Dükkanı. Tüm hakları saklıdır. YSFZBK.LTDŞTİ </p>
+    </footer>
+    <script src="../skriptler/myscript.js"></script>
+</body>
+</html>
+    
